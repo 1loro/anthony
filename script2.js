@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Lista de canciones (reemplaza estos nombres con los nombres reales de tus archivos)
     const songs = [
-      "baby_Demon.mp3",
-      "baby_Demon.mp3",
-      "baby_Demon.mp3",
-      "music/cancion4.mp3",
-      "music/cancion5.mp3",
+      "baby_demon.mp3",
+      "baby_demon.mp3",
+      "baby_demon.mp3",
+      "https://github.com/1loro/anthony/blob/main/baby_demon.mp3",
+      "https://github.com/1loro/anthony/blob/main/baby_demon.mp3",
     ]
   
     // Función para obtener una canción aleatoria
