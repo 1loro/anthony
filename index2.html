@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnthonySly | Sello Discográfico</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-record-vinyl"></i>
+                </div>
+                <div class="logo-text">AnthonySly</div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#artistas">Artistas</a></li>
+                    <li><a href="#lanzamientos">Lanzamientos</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#contacto" class="cta-button">Contáctanos</a>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Descubre nueva música</div>
+                <h1>Eleva tu <span>experiencia</span> musical al siguiente nivel</h1>
+                <p>Con nuestro catálogo de artistas innovadores, descubrirás sonidos únicos que transformarán tu percepción de la música contemporánea.</p>
+                <div class="hero-buttons">
+                    <a href="#lanzamientos" class="primary-button">
+                        <span>Explorar Música</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="secondary-button" id="watch-video">
+                        <i class="fas fa-play"></i>
+                        <span>Ver Video</span>
+                    </a>
+                </div>
+            </div>
+            <div class="vinyl-player-container">
+                <div class="vinyl-wrapper">
+                    <div class="vinyl" id="vinyl">
+                        <img src="vinilo.png" alt="Vinilo" class="vinyl-image">
+                    </div>
+                    <div class="vinyl-center">
+                        <button id="play-button" class="play-button">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <audio id="audio-player"></audio>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="particles"></div>
+        </div>
+    </section>
+
+    <section id="estadisticas" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Artistas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Lanzamientos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15M+</div>
+                    <div class="stat-label">Reproducciones</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Premios</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artistas" class="artists-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Nuestro talento</div>
+                <h2>Artistas <span>destacados</span></h2>
+                <p>Descubre a los creadores que están redefiniendo los límites de la música contemporánea</p>
+                <a href="#" class="section-link">
+                    <span>Ver todos los artistas</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="artists-showcase">
+                <div class="artists-center">
+                    <div class="center-circle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="orbit-circles"></div>
+                </div>
+                
+                <div class="artist-orbit">
+                    <div class="artist-bubble" style="--rotation: 0deg">
+                        <div class="artist-image">
+                            <img src="gino.jpg" alt="Luna Nova">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Luna Nova</h3>
+                            <p>Electrónica</p>
+                        </div>
+                    </div>
+                    
+                    <div class="artist-bubble" style="--rotation: 60deg">
+                        <div class="artist-image">
+                            <img src="/placeholder.svg?height=100&width=100" alt="The Echoes">
+                        </div>
+                        <div class="artist-info">
+                            <h3>The Echoes</h3>
+                            <p>Rock Alternativo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="artist-bubble" style="--rotation: 120deg">
+                        <div class="artist-image">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Midnight Pulse">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Midnight Pulse</h3>
+                            <p>Synthwave</p>
+                        </div>
+                    </div>
+                    
+                    <div class="artist-bubble" style="--rotation: 180deg">
+                        <div class="artist-image">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Velvet Sound">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Velvet Sound</h3>
+                            <p>R&B</p>
+                        </div>
+                    </div>
+                    
+                    <div class="artist-bubble" style="--rotation: 240deg">
+                        <div class="artist-image">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Cosmic Drift">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Cosmic Drift</h3>
+                            <p>Ambient</p>
+                        </div>
+                    </div>
+                    
+                    <div class="artist-bubble" style="--rotation: 300deg">
+                        <div class="artist-image">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Neon Beats">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Neon Beats</h3>
+                            <p>House</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lanzamientos" class="releases-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Novedades</div>
+                <h2>Últimos <span>lanzamientos</span></h2>
+                <p>Explora nuestras producciones más recientes y descubre nuevos sonidos</p>
+            </div>
+            
+            <div class="releases-grid">
+                <div class="release-card">
+                    <div class="release-image">
+                        <img src="gino.jpg" alt="Álbum 1">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="release-info">
+                        <h3>Ecos del Futuro</h3>
+                        <p class="artist-name">Luna Nova</p>
+                        <p class="release-date">Lanzado: 15 Mayo, 2023</p>
+                    </div>
+                </div>
+                
+                <div class="release-card">
+                    <div class="release-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Álbum 2">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="release-info">
+                        <h3>Resonancia</h3>
+                        <p class="artist-name">The Echoes</p>
+                        <p class="release-date">Lanzado: 3 Junio, 2023</p>
+                    </div>
+                </div>
+                
+                <div class="release-card">
+                    <div class="release-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Álbum 3">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="release-info">
+                        <h3>Noche Eterna</h3>
+                        <p class="artist-name">Midnight Pulse</p>
+                        <p class="release-date">Lanzado: 22 Julio, 2023</p>
+                    </div>
+                </div>
+                
+                <div class="release-card">
+                    <div class="release-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Álbum 4">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="release-info">
+                        <h3>Atmósferas</h3>
+                        <p class="artist-name">Cosmic Drift</p>
+                        <p class="release-date">Lanzado: 10 Agosto, 2023</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="#" class="primary-button">
+                    <span>Ver Catálogo Completo</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Opiniones</div>
+                <h2>Lo que dicen <span>nuestros oyentes</span></h2>
+                <p>Descubre las experiencias y opiniones de nuestros seguidores más fieles</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                        <i class="fas fa-headphones-alt"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"La calidad de producción de AnthonySly Records es impresionante. Cada lanzamiento tiene un sonido único y perfectamente pulido."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>- Carlos Mendoza</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Descubrí a Luna Nova gracias a AnthonySly Records y ha cambiado completamente mi perspectiva sobre la música electrónica."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>- Ana Martínez</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Los eventos organizados por AnthonySly Records son una experiencia inmersiva. La atención al detalle es extraordinaria."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>- Miguel Sánchez</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Como músico, admiro la dedicación que AnthonySly Records tiene con sus artistas. Es un sello que realmente se preocupa por la música."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>- Laura Gómez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventos" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Próximamente</div>
+                <h2>Eventos <span>destacados</span></h2>
+                <p>No te pierdas nuestros próximos conciertos y festivales</p>
+            </div>
+            
+            <div class="events-timeline">
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-number">15</div>
+                        <div class="date-month">OCT</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Festival Night Sly</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Teatro Metropolitano, Ciudad</p>
+                        <p class="event-description">Una noche mágica con actuaciones de Luna Nova, The Echoes y Midnight Pulse.</p>
+                    </div>
+                    <a href="#" class="event-button">Comprar Entradas</a>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-number">22</div>
+                        <div class="date-month">NOV</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Lanzamiento: Resonancia</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Sala Acústica, Ciudad</p>
+                        <p class="event-description">Presentación exclusiva del nuevo álbum de The Echoes con invitados especiales.</p>
+                    </div>
+                    <a href="#" class="event-button">Comprar Entradas</a>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-number">10</div>
+                        <div class="date-month">DIC</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Winter Fest</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Parque Central, Ciudad</p>
+                        <p class="event-description">Festival de invierno con todos nuestros artistas. Una experiencia musical inolvidable.</p>
+                    </div>
+                    <a href="#" class="event-button">Comprar Entradas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <div class="section-badge">Conecta con nosotros</div>
+                        <h2>¿Listo para <span>colaborar</span>?</h2>
+                        <p>Estamos siempre buscando nuevos talentos y oportunidades de colaboración</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>Calle Música 123, Ciudad</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@AnthonySly.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+123 456 7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-record-vinyl"></i>
+                        </div>
+                        <div class="logo-text">AnthonySly Records</div>
+                    </div>
+                    <p>Descubriendo y promoviendo los sonidos del mañana. Nuestro sello está comprometido con la calidad y la innovación musical.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#artistas">Artistas</a></li>
+                        <li><a href="#lanzamientos">Lanzamientos</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Licencias</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe las últimas noticias y lanzamientos directamente en tu bandeja de entrada.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AnthonySly Records. Derechos reservados.</p>
+                <p>Made with <i class="fas fa-heart"></i> by Lorenzo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
+
