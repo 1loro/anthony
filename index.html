@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnthonySly | Sello Discográfico</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Añadir Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
 </head>
 <body>
     <header class="main-header">
@@ -84,7 +88,7 @@
                     <div class="stat-label">Lanzamientos</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">15M+</div>
+                    <div class="numero">150M+</div>
                     <div class="stat-label">Reproducciones</div>
                 </div>
                 <div class="stat-item">
@@ -94,88 +98,119 @@
             </div>
         </div>
     </section>
-
-    <section id="artistas" class="artists-section">
+    
+    <section id="merchandise" class="merchandise-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">Nuestro talento</div>
-                <h2>Artistas <span>destacados</span></h2>
-                <p>Descubre a los creadores que están redefiniendo los límites de la música contemporánea</p>
-                <a href="#" class="section-link">
-                    <span>Ver todos los artistas</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+                <div class="section-badge">Artistas</div>
+                <h2>Artistas <span>Destacados</span></h2>
+                <p>Lleva contigo el estilo de AnthonySly con nuestra exclusiva colección de productos</p>
             </div>
             
-            <div class="artists-showcase">
-                <div class="artists-center">
-                    <div class="center-circle">
-                        <i class="fas fa-plus"></i>
+            <div class="merchandise-showcase">
+                <div class="swiper merchandise-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Producto 1 -->
+                        <div class="swiper-slide">
+                            <div class="release-card">
+                                <div class="release-image">
+                                    <img src="img/gino.jpg" alt="Álbum 1">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="release-info">
+                                    <h3>Gino Mella</h3>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 2 -->
+                        <div class="swiper-slide">
+                            <div class="release-card">
+                                <div class="release-image">
+                                    <img src="img/jairo.avif" alt="Álbum 1">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="release-info">
+                                    <h3>Jairo Vera</h3>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 3 -->
+                        <div class="swiper-slide">
+                            <div class="release-card">
+                                <div class="release-image">
+                                    <img src="img/king.avif" alt="Álbum 1">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="release-info">
+                                    <h3>King Savagge</h3>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 4 -->
+                        <div class="swiper-slide">
+                            <div class="release-card">
+                                <div class="release-image">
+                                    <img src="img/lleflight.jpg" alt="Álbum 1">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="release-info">
+                                    <h3>Lleflight</h3>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 5 -->
+                        <div class="swiper-slide">
+                            <div class="release-card">
+                                <div class="release-image">
+                                    <img src="img/bayriton.jpg" alt="Álbum 1">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="release-info">
+                                    <h3>Bayriton</h3>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="release-card">
+                                <div class="release-image">
+                                    <img src="img/santi.jpg" alt="Álbum 1">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="release-info">
+                                    <h3>Santi Valencia</h3>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="orbit-circles"></div>
+                    
+                    
+                    <div class="swiper-pagination" style="    bottom: var(--swiper-pagination-bottom, -15px);"></div>
                 </div>
-                
-                <div class="artist-orbit">
-                    <div class="artist-bubble" style="--rotation: 0deg">
-                        <div class="artist-image">
-                            <img src="gino.jpg" alt="Luna Nova">
-                        </div>
-                        <div class="artist-info">
-                            <h3>Luna Nova</h3>
-                            <p>Electrónica</p>
-                        </div>
-                    </div>
-                    
-                    <div class="artist-bubble" style="--rotation: 60deg">
-                        <div class="artist-image">
-                            <img src="/placeholder.svg?height=100&width=100" alt="The Echoes">
-                        </div>
-                        <div class="artist-info">
-                            <h3>The Echoes</h3>
-                            <p>Rock Alternativo</p>
-                        </div>
-                    </div>
-                    
-                    <div class="artist-bubble" style="--rotation: 120deg">
-                        <div class="artist-image">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Midnight Pulse">
-                        </div>
-                        <div class="artist-info">
-                            <h3>Midnight Pulse</h3>
-                            <p>Synthwave</p>
-                        </div>
-                    </div>
-                    
-                    <div class="artist-bubble" style="--rotation: 180deg">
-                        <div class="artist-image">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Velvet Sound">
-                        </div>
-                        <div class="artist-info">
-                            <h3>Velvet Sound</h3>
-                            <p>R&B</p>
-                        </div>
-                    </div>
-                    
-                    <div class="artist-bubble" style="--rotation: 240deg">
-                        <div class="artist-image">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Cosmic Drift">
-                        </div>
-                        <div class="artist-info">
-                            <h3>Cosmic Drift</h3>
-                            <p>Ambient</p>
-                        </div>
-                    </div>
-                    
-                    <div class="artist-bubble" style="--rotation: 300deg">
-                        <div class="artist-image">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Neon Beats">
-                        </div>
-                        <div class="artist-info">
-                            <h3>Neon Beats</h3>
-                            <p>House</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="#" class="primary-button">
+                    <span>Ver Todos los Artistas</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -191,57 +226,57 @@
             <div class="releases-grid">
                 <div class="release-card">
                     <div class="release-image">
-                        <img src="gino.jpg" alt="Álbum 1">
+                        <img src="img/mamacita.jpg" alt="Álbum 1">
                         <div class="play-overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="release-info">
-                        <h3>Ecos del Futuro</h3>
-                        <p class="artist-name">Luna Nova</p>
-                        <p class="release-date">Lanzado: 15 Mayo, 2023</p>
+                        <h3>AY MAMACITA</h3>
+                        <p class="artist-name">Jairo Vera</p>
+                        <p class="release-date">28 Noviembre, 2024</p>
                     </div>
                 </div>
                 
                 <div class="release-card">
                     <div class="release-image">
-                        <img src="/placeholder.svg?height=300&width=300" alt="Álbum 2">
+                        <img src="img/despues_de_ti.jpg" alt="Álbum 2">
                         <div class="play-overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="release-info">
-                        <h3>Resonancia</h3>
-                        <p class="artist-name">The Echoes</p>
-                        <p class="release-date">Lanzado: 3 Junio, 2023</p>
+                        <h3>Despues de ti</h3>
+                        <p class="artist-name">Gino Mella</p>
+                        <p class="release-date">14 Febrero, 2025</p>
                     </div>
                 </div>
                 
                 <div class="release-card">
                     <div class="release-image">
-                        <img src="/placeholder.svg?height=300&width=300" alt="Álbum 3">
+                        <img src="img/shorty.png" alt="Álbum 3">
                         <div class="play-overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="release-info">
-                        <h3>Noche Eterna</h3>
-                        <p class="artist-name">Midnight Pulse</p>
-                        <p class="release-date">Lanzado: 22 Julio, 2023</p>
+                        <h3>SHORTY</h3>
+                        <p class="artist-name">Jairo Vera</p>
+                        <p class="release-date">26 Febrero, 2025</p>
                     </div>
                 </div>
                 
                 <div class="release-card">
                     <div class="release-image">
-                        <img src="/placeholder.svg?height=300&width=300" alt="Álbum 4">
+                        <img src="img/polarizao.jpg" alt="Álbum 4">
                         <div class="play-overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="release-info">
-                        <h3>Atmósferas</h3>
-                        <p class="artist-name">Cosmic Drift</p>
-                        <p class="release-date">Lanzado: 10 Agosto, 2023</p>
+                        <h3>POLARIZAO</h3>
+                        <p class="artist-name">Santi Valencia</p>
+                        <p class="release-date">20 Febrero, 2025</p>
                     </div>
                 </div>
             </div>
@@ -254,6 +289,8 @@
             </div>
         </div>
     </section>
+
+
 
     <section id="testimonios" class="testimonials-section">
         <div class="container">
@@ -371,7 +408,7 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="section-header">
-                        <div class="section-badge">Conecta con nosotros</div>
+                        <div class="section-badge" style="text-align: center;" >Conecta con nosotros</div>
                         <h2>¿Listo para <span>colaborar</span>?</h2>
                         <p>Estamos siempre buscando nuevos talentos y oportunidades de colaboración</p>
                     </div>
@@ -389,7 +426,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h3>Email</h3>
-                                <p>info@AnthonySly.com</p>
+                                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6e070008012e2f001a060100173d0217400d0103">[email&#160;protected]</a></p>
                             </div>
                         </div>
                         
@@ -462,6 +499,7 @@
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#artistas">Artistas</a></li>
                         <li><a href="#lanzamientos">Lanzamientos</a></li>
+                        <li><a href="#merchandise">Merchandise</a></li>
                         <li><a href="#eventos">Eventos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
@@ -489,12 +527,351 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2025 AnthonySly Records. Derechos reservados.</p>
-                <p>Made with <i class="fas fa-heart"></i> by Lorenzo</p>
+                <a href="https://github.com/1loro">
+                    <p><span class="firma">Made with</span> <i class="fas fa-heart" style="color: red;"></i> <span class="firma">by 
+                        Lorenzo
+                    </p></a>
             </div>
         </div>
     </footer>
+    <style>
+        @keyframes brillo {
+            0% { background-position: -100%; }
+            100% { background-position: 100%; }
+        }
 
+        .firma {
+            background: linear-gradient(90deg, #ffffff, #d80c05, #ffffff);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            animation: brillo 4s linear infinite;
+        }
+        
+        .numero{
+            background: linear-gradient(90deg, #ffffff, #d80c05, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            animation: brillo 4s linear infinite;
+            background-size: 200% 100%;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Estilos para el Swiper de artistas */
+        .artists-section {
+            padding-bottom: 3rem; /* Reducido de 8rem a 3rem */
+        }
+
+        .artists-showcase {
+            padding: 0; /* Reducido de 2rem a 0 */
+        }
+
+        .artists-swiper {
+            width: 100%;
+            padding-bottom: 2rem; /* Reducido de 3rem a 2rem */
+        }
+
+        .artist-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            height: 100%;
+        }
+
+        .artist-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .artist-card .artist-image {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%; /* Aspecto cuadrado */
+            overflow: hidden;
+        }
+
+        .artist-card .artist-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .artist-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 58, 76, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .artist-overlay i {
+            font-size: 3rem;
+            color: var(--text-light);
+        }
+
+        .artist-card:hover .artist-overlay {
+            opacity: 0.8;
+        }
+
+        .artist-card:hover .artist-image img {
+            transform: scale(1.05);
+        }
+
+        .artist-card .artist-info {
+            padding: 1.25rem;
+            text-align: left;
+        }
+
+        .artist-card .artist-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .artist-card .artist-info p {
+            font-size: 0.875rem;
+            color: var(--primary-color);
+        }
+
+        /* Estilos para la paginación */
+        .swiper-pagination {
+            position: relative;
+            bottom: 0;   
+            margin-top: 0.5rem; /* Reducido de 1rem a 0.5rem */
+            
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--primary-color);
+            transform: scale(1.2);
+            
+        }
+
+        /* Reducir espacio entre secciones */
+        .releases-section {
+            padding-top: 4rem; /* Reducido de 8rem a 4rem */
+        }
+
+        /* Estilos para la sección de Merchandise */
+        .merchandise-section {
+            background: var(--background-gradient-dark);
+            position: relative;
+            padding: 4rem 0;
+        }
+
+        .merchandise-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, transparent, #150303);
+            z-index: 1;
+        }
+
+        .merchandise-section::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, #150303);
+            z-index: 1;
+        }
+
+        .merchandise-showcase {
+            position: relative;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        .merchandise-swiper {
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+
+        .merch-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            height: 100%;
+        }
+
+        .merch-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .merch-image {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%; /* Aspecto cuadrado */
+            overflow: hidden;
+        }
+
+        .merch-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .merch-card:hover .merch-image img {
+            transform: scale(1.05);
+        }
+
+        .merch-info {
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .merch-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .merch-price {
+            font-size: 1.125rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .merch-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .merch-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive para el Swiper */
+        @media (max-width: 768px) {
+            .artist-card .artist-info {
+                padding: 1rem;
+            }
+            
+            .artists-section {
+                padding-bottom: 2rem; /* Aún más reducido en móvil */
+            }
+            
+            .releases-section {
+                padding-top: 3rem; /* Aún más reducido en móvil */
+            }
+
+            .merch-info {
+                padding: 1rem;
+            }
+
+            .merchandise-section {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- Añadir Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script2.js"></script>
+    <script>
+        // Inicializar el Swiper para artistas
+        document.addEventListener("DOMContentLoaded", function() {
+            const artistsSwiper = new Swiper('.artists-swiper', {
+                slidesPerView: 1, // Por defecto en móvil
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // Cuando la ventana tenga >= 640px
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // Cuando la ventana tenga >= 768px
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    // Cuando la ventana tenga >= 1024px
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    }
+                }
+            });
+
+            // Inicializar el Swiper para merchandise
+            const merchandiseSwiper = new Swiper('.merchandise-swiper', {
+                slidesPerView: 1, // Solo 1 producto visible en móvil
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // Cuando la ventana tenga >= 640px
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // Cuando la ventana tenga >= 768px
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    // Cuando la ventana tenga >= 1024px
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
