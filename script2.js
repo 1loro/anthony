@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "baby_demon.mp3",
       "baby_demon.mp3",
       "baby_demon.mp3",
-      "https://github.com/1loro/anthony/blob/main/baby_demon.mp3",
-      "https://github.com/1loro/anthony/blob/main/baby_demon.mp3",
+      "baby_demon.mp3",
+      "baby_demon.mp3",
     ]
   
     // Función para obtener una canción aleatoria
