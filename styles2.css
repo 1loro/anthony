@@ -735,7 +735,7 @@ img {
   font-size: 3rem;
   color: var(--text-light);
 }
-
+/*
 .release-card:hover .play-overlay {
   opacity: 0.5;
 }
@@ -743,7 +743,7 @@ img {
 .release-card:hover .release-image img {
   transform: scale(1.05);
 }
-
+*/
 .release-info {
   padding: 1.5rem;
 }
